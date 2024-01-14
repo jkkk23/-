@@ -43,4 +43,12 @@ done
 python ./plot.py ../results/fig_5a.png ../results/dset-mnist_alg-fedavg_C-0.5_B-20_T-200_E-1_device-gpu_W-200_lr-0.1_noisy_frac-0.0_bn_private-none.pkl ../results/dset-mnist_alg-fedavg_C-0.5_B-20_T-200_E-1_device-gpu_W-200_lr-0.1_noisy_frac-0.0_bn_private-yb.pkl ../results/dset-mnist_alg-perfedavg_C-0.5_B-20_T-200_E-1_device-gpu_W-200_lr-0.1_noisy_frac-0.0_beta-0.1.pkl ../results/dset-mnist_alg-pfedme_C-0.5_B-20_T-200_E-1_device-gpu_W-200_lr-0.3_noisy_frac-0.0_beta-1.0_lamda-1.0.pkl
 ```
 
+这些代码被保存在 `code/run`中，可以将其保存为`run.sh`.在终端中，进入该脚本所在目录,执行命令：`bash run.sh` 或 `./run.sh`。
 
+如果无法运行可以手动输入指令实现。
+
+注意事项:
+
+确保 `python main.py` 和 `plot.py` 脚本以及所有依赖库都已正确安装。
+确保 `../results` 目录存在，用于存放实验结果文件。
+如果使用 GPU，请确保 GPU 环境配置正确。
